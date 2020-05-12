@@ -1,0 +1,29 @@
+.sidenav-container {
+  width: 50px;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  transition: width 1s;
+
+  &.nav-opened {
+    width: 150px;
+    position: fixed;
+    left: 0;
+  }
+
+  &.nav-position-right {
+    position: fixed;
+    right: 0;
+  }
+  
+  .home-icon {
+    cursor: pointer;
+
+    &:hover {
+      color: plum;
+    }
+  }
+}

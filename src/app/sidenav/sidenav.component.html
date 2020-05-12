@@ -1,1 +1,14 @@
-<p>sidenav works!</p>
+<div
+  [ngClass]="{'sidenav-container': true,
+    'nav-opened': isOpen === true,
+    'nav-position-right': position === 'right' }"
+>
+  <mat-icon
+    [ngClass]="'home-icon'"
+    aria-hidden="false"
+    aria-label="Example home icon"
+    (click)="onToggle()"
+  >
+    home
+  </mat-icon>
+</div>
