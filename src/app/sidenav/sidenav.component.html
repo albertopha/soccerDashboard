@@ -3,12 +3,68 @@
     'nav-opened': isOpen === true,
     'nav-position-right': position === 'right' }"
 >
-  <mat-icon
-    [ngClass]="'home-icon'"
-    aria-hidden="false"
-    aria-label="Example home icon"
-    (click)="onToggle()"
-  >
-    home
-  </mat-icon>
+  <div [ngClass]="'icon-groups'">
+    <div>
+      <mat-icon
+        [ngClass]="'icons'"
+        aria-hidden="false"
+        aria-label=""
+        (click)="onToggle()"
+      >
+        home
+      </mat-icon>
+      <span [ngClass]="'expanded-label'">Home</span>
+    </div>
+    <div>
+      <mat-icon
+        [ngClass]="'icons'"
+        aria-hidden="false"
+        aria-label=""
+      >
+        list
+      </mat-icon>
+      <span [ngClass]="'expanded-label'">Browse</span>
+    </div>
+    <div>
+      <mat-icon
+        [ngClass]="'icons'"
+        aria-hidden="false"
+        aria-label=""
+      >
+        favorite_border
+      </mat-icon>
+      <span [ngClass]="'expanded-label'">Favorites</span>
+    </div>
+    <div>
+      <mat-icon
+        [ngClass]="'icons'"
+        aria-hidden="false"
+        aria-label=""
+      >
+        calendar_today
+      </mat-icon>
+      <span [ngClass]="'expanded-label'">Calendar</span>
+    </div>
+    <div>
+      <mat-icon
+        [ngClass]="'icons'"
+        aria-hidden="false"
+        aria-label=""
+      >
+        settings
+      </mat-icon>
+      <span [ngClass]="'expanded-label'">Settings</span>
+    </div>
+    <div>
+      <mat-icon
+        [ngClass]="'icons'"
+        aria-hidden="false"
+        aria-label=""
+      >
+        feedback
+      </mat-icon>
+      <span [ngClass]="'expanded-label'">Feedback</span>
+    </div>
+  </div>
+  <div [ngClass]="'user-profile'">User profile</div>
 </div>

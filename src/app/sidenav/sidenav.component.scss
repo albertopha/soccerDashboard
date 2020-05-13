@@ -1,17 +1,37 @@
 .sidenav-container {
-  width: 50px;
+  width: 70px;
   height: 100%;
-  padding: 10px;
+  padding: 50px 10px 10px 10px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background-color: white;
   transition: width 1s;
+
+  .icon-groups {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    >div {
+      margin-bottom: 30px;
+    }
+  }
+
+  .expanded-label {
+    display: none;
+  }
 
   &.nav-opened {
     width: 150px;
     position: fixed;
     left: 0;
+
+    .expanded-label {
+      display: block;
+    }
   }
 
   &.nav-position-right {
@@ -19,7 +39,7 @@
     right: 0;
   }
   
-  .home-icon {
+  .icons {
     cursor: pointer;
 
     &:hover {
