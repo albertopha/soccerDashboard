@@ -1,0 +1,9 @@
+<div [ngClass]="'dashboard-container'">
+  <app-sidenav mode="side"></app-sidenav>
+  <div [ngClass]="'dashboard-content-container'">
+    <div *ngFor="let info of soccerInfos; index as ind">
+      <app-card [info]="info" [ind]="ind"></app-card>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
