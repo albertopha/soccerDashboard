@@ -8,9 +8,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { CardComponent } from './card/card.component';
 import { HomeComponent } from './home/home.component';
+import { CardDetailsComponent } from './card-details/card-details.component';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     SidenavComponent,
     CardComponent,
-    HomeComponent
+    HomeComponent,
+    CardDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatIconModule,
+    MatCardModule,
     HttpClientModule
   ],
   providers: [],

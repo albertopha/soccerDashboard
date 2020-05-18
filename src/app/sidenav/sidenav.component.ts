@@ -9,8 +9,7 @@ export class SidenavComponent implements OnInit {
   @Input() position: string;
   public isOpen: boolean = false;
 
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit(): void {
   }

@@ -1,1 +1,14 @@
-<p>card works!</p>
+<mat-card
+  [ngIf]="this.info"
+  [ngClass]="'card-container'"
+>
+  <img
+    mat-card-image
+    [src]="this.info.thumbnail"
+    alt="Photo of a Shiba Inu"
+  >
+  <mat-card-content>
+    <p>{{this.info.title}}</p>
+    <button mat-button>Add to favorites</button>
+  </mat-card-content>
+</mat-card>
