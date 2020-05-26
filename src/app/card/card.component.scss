@@ -1,8 +1,33 @@
 .card-container {
-  width: 200px;
-  height: 200px;
+  cursor: pointer;
+  transition: transform .5s;
 
   >img {
-    margin-bottom: 0;
+    width: calc(100vw / 5);
+    height: 180px;
+    object-fit: fill;
+  }
+
+  >.play-button {
+    display: none;
+  }
+
+  &:hover {
+    transform: scale(1.5);
+  }
+
+  &:hover .play-button {
+    color: rgba(255, 255, 255, 1);
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    position: relative;
+    right: 23px;
+    bottom: 0;
+    z-index: 99;
+
+    &:hover {
+      transform: scale(1.5);
+      color: pink;
+    }
   }
 }

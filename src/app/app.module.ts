@@ -6,13 +6,18 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { CardComponent } from './card/card.component';
 import { HomeComponent } from './home/home.component';
 import { CardDetailsComponent } from './card-details/card-details.component';
+import { PlayerModalComponent } from './player-modal/player-modal.component';
+
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 
 @NgModule({
@@ -21,7 +26,8 @@ import { CardDetailsComponent } from './card-details/card-details.component';
     SidenavComponent,
     CardComponent,
     HomeComponent,
-    CardDetailsComponent
+    CardDetailsComponent,
+    PlayerModalComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +36,10 @@ import { CardDetailsComponent } from './card-details/card-details.component';
     MatSidenavModule,
     MatIconModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

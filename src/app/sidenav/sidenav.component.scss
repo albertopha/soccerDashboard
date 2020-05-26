@@ -27,6 +27,7 @@
   &.nav-opened {
     width: 150px;
     position: fixed;
+    z-index: 100;
     left: 0;
 
     .expanded-label {
@@ -36,6 +37,7 @@
 
   &.nav-position-right {
     position: fixed;
+    z-index: 100;
     right: 0;
   }
   

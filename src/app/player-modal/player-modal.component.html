@@ -1,0 +1,16 @@
+<div [ngClass]="'modal-container'">
+  <div
+    [ngClass]="'modal-content'"
+    *ngIf="this.title && this.embed; else errorContent"
+  >
+    <h1>{{this.title}}</h1>
+    <div [innerHtml]="this.embed"></div>
+    <button mat-button color="primary" (click)="closeDialog()">Close</button>
+  </div>
+</div>
+
+<ng-template #errorContent>
+  <h1>Couldn't find the player</h1>
+  <div>Try again later.</div>
+  <button mat-button color="primary" (click)="closeDialog()">Close</button>
+</ng-template>
